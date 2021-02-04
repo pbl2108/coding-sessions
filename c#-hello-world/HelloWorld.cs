@@ -1,9 +1,23 @@
 using System;
 
+namespace HelloWorldNameSpace {
 public class HelloWorld
 {
-    public static void Main()
+    //Change-2 created - test. test.
+    static void Main(string[] args)
     {
-        System.IO.Console.WriteLine("Hello World!");
+        //var s = Console.ReadKey();
+        Console.WriteLine("--------:");
+        if (args.Length > 0)
+        {
+            for (int i = 0; i < args.Length; i++)
+            { 
+                Console.WriteLine("args[" + i.ToString() + "]=" + args[i]);
+            }
+        }
+        Console.WriteLine("Hello World!");
+
+       
     }
+}
 }
