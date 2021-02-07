@@ -7,6 +7,7 @@ namespace TheMoneyExample
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            
         }
     }
 }
