@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TheMoneyExample
+namespace Money
 {
     public class Dollar
     {
