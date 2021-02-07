@@ -1,9 +1,9 @@
 using System;
 using Xunit;
 
-namespace TheMoneyExample.Test
+namespace Money.Test
 {
-    public class TheMoneyExampleTests
+    public class MoneyTests
     {
         [Fact(DisplayName = "Checks Multiplication")]
         public void TestMultiplication()
