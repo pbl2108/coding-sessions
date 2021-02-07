@@ -1,0 +1,5 @@
+﻿$5 + 10 CFH = $10 if rate is 2:1
+Done: $5 * 2 = $10
+Make "amount" private
+Dollar side effects?
+Money rounding?
