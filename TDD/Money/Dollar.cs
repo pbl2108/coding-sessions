@@ -15,9 +15,15 @@ namespace Money
             Amount = amount;
         }
 
-        public void Times(int multiplier)
+        public Dollar Times(int multiplier)
         {
-            Amount *= multiplier;
+            return new Dollar(Amount*multiplier);
+        }
+
+        public override bool Equals(object obj)
+        {
+            Dollar dollar = (Dollar)obj;
+            return Amount == dollar.Amount;
         }
     }
 }
