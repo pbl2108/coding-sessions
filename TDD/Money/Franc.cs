@@ -6,24 +6,24 @@ using System.Threading.Tasks;
 
 namespace Money
 {
-    public class Dollar
+    public class Franc
     {
         private int Amount;
 
-        public Dollar(int amount)
+        public Franc(int amount)
         {
             Amount = amount;
         }
 
-        public Dollar Times(int multiplier)
+        public Franc Times(int multiplier)
         {
-            return new Dollar(Amount*multiplier);
+            return new Franc(Amount*multiplier);
         }
 
         public override bool Equals(object obj)
         {
-            Dollar dollar = (Dollar)obj;
-            return Amount == dollar.Amount;
+            Franc franc = (Franc)obj;
+            return Amount == franc.Amount;
         }
     }
 }
