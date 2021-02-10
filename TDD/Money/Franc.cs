@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Money
 {
-    public class Franc
+    public class Franc : Money
     {
-        private int Amount;
-
         public Franc(int amount)
         {
             Amount = amount;
@@ -17,13 +15,8 @@ namespace Money
 
         public Franc Times(int multiplier)
         {
-            return new Franc(Amount*multiplier);
+            return new Franc(Amount * multiplier);
         }
 
-        public override bool Equals(object obj)
-        {
-            Franc franc = (Franc)obj;
-            return Amount == franc.Amount;
-        }
     }
 }
