@@ -29,6 +29,8 @@ namespace Money.Test
 
             Assert.True(new Franc(5).Equals(new Franc(5)));
             Assert.False(new Franc(5).Equals(new Franc(6)));
+
+            Assert.False(new Franc(5).Equals(new Dollar(5)));
         }
     }
 }

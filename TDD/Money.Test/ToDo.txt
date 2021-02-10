@@ -11,3 +11,5 @@ Equal object
 Dollar/Franc duplication
 	DONE: Common Equals
 Common Times
+	DONE:Compare Francs to Dollars
+Currency?
