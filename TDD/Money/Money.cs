@@ -13,7 +13,7 @@ namespace Money
         public override bool Equals(object obj)
         {
             Money money = (Money)obj;
-            return Amount == money.Amount;
+            return Amount == money.Amount && GetType().Equals(money.GetType());
         }
     }
 }
