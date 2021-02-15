@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Money", "Money\Money.csproj", "{9508664C-06A0-489E-92AF-AAD38A93FB8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Money.Test", "Money.Test\Money.Test.csproj", "{B68FC2FD-BC9B-49DF-81A7-E33912A12021}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Money.Test", "Money.Test\Money.Test.csproj", "{B68FC2FD-BC9B-49DF-81A7-E33912A12021}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Time Tracking", "Time Tracking", "{A94392C3-4EAB-42FA-A84C-C01F761E9E00}"
+	ProjectSection(SolutionItems) = preProject
+		..\Time Tracking.xlsx = ..\Time Tracking.xlsx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
