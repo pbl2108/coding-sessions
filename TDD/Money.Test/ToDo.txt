@@ -12,5 +12,5 @@ Dollar/Franc duplication
 	DONE: Common Equals
 Common Times
 	DONE:Compare Francs to Dollars
-Currency?
+	DONE:Currency?
 Delete TestFrancMultiplication()?
