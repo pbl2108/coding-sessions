@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Money
 {
-    public abstract class Money
+    public class Money
     {
         protected string currency;
 
@@ -20,13 +20,16 @@ namespace Money
 
 
 
-        public abstract Money Times(int multiplier);
+        public Money Times(int multiplier)
+        {
+            return new Money(amount * multiplier, currency);
+        }
 
 
         public override bool Equals(object obj)
         {
             Money money = (Money)obj;
-            return amount == money.amount && GetType().Equals(money.GetType());
+            return amount == money.amount && Currency().Equals(money.Currency());
         }
 
 
@@ -44,6 +47,11 @@ namespace Money
         public string Currency()
         {
             return currency;
+        }
+
+        public override string ToString()
+        {
+            return amount + " " + currency;
         }
 
     }
