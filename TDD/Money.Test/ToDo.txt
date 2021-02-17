@@ -13,4 +13,4 @@ Dollar/Franc duplication
 	DONE:Common Times
 	DONE:Compare Francs to Dollars
 	DONE:Currency?
-Delete TestFrancMultiplication()?
+	DONE:Delete TestFrancMultiplication()?
