@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Money
 {
-    public class Money
+    public class Money : IExpression
     {
         protected string currency;
 
@@ -23,6 +23,11 @@ namespace Money
         public Money Times(int multiplier)
         {
             return new Money(amount * multiplier, currency);
+        }
+
+        public IExpression Plus(Money added)
+        {
+            return new Money(amount + added.amount, currency);
         }
 
 
