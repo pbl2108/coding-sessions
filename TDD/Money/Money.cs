@@ -8,9 +8,9 @@ namespace Money
 {
     public class Money : IExpression
     {
-        protected string currency;
+        public string currency;
 
-        protected int amount;
+        public int amount;
 
         public Money(int amount, string currency)
         {
@@ -18,16 +18,19 @@ namespace Money
             this.currency = currency;
         }
 
-
+        public Money Reduce(string to)
+        {
+            return this;
+        }
 
         public Money Times(int multiplier)
         {
             return new Money(amount * multiplier, currency);
         }
 
-        public IExpression Plus(Money added)
+        public IExpression Plus(Money addend)
         {
-            return new Money(amount + added.amount, currency);
+            return new Sum(this, addend);
         }
 
 
