@@ -80,5 +80,18 @@ namespace Money.Test
             Assert.Equal(Money.Dollar(1), result);
         }
 
+        [Fact(DisplayName = "Checks Mixed Addition")]
+        public void TestMixedAddition()
+        {
+            IExpression fiveBucks = Money.Dollar(5);
+            IExpression tenFranks = Money.Franc(10);
+
+            Bank bank = new Bank();
+            bank.AddRate("CHF", "USD", 2);
+
+            Money result = bank.Reduce(fiveBucks.Plus(tenFranks), "USD");
+            Assert.Equal(Money.Dollar(10), result);
+        }
+
     }
 }
