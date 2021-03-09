@@ -42,7 +42,6 @@ namespace Money
         }
 
 
-
         public static Money Dollar(int amount)
         {
             return new Money(amount, "USD");

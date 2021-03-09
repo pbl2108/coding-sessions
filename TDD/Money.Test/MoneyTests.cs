@@ -93,5 +93,35 @@ namespace Money.Test
             Assert.Equal(Money.Dollar(10), result);
         }
 
+        [Fact(DisplayName = "Checks Sum Plus Money")]
+        public void TestSumPlusMoney()
+        {
+            IExpression fiveBucks = Money.Dollar(5);
+            IExpression tenFranks = Money.Franc(10);
+
+            Bank bank = new Bank();
+            bank.AddRate("CHF", "USD", 2);
+
+            IExpression sum = new Sum(fiveBucks, tenFranks).Plus(fiveBucks);
+
+            Money result = bank.Reduce(sum, "USD");
+            Assert.Equal(Money.Dollar(15), result);
+        }
+
+        [Fact(DisplayName = "Checks Sum Times")]
+        public void TestSumTimes()
+        {
+            IExpression fiveBucks = Money.Dollar(5);
+            IExpression tenFranks = Money.Franc(10);
+
+            Bank bank = new Bank();
+            bank.AddRate("CHF", "USD", 2);
+
+            IExpression sum = new Sum(fiveBucks, tenFranks).Times(2);
+
+            Money result = bank.Reduce(sum, "USD");
+            Assert.Equal(Money.Dollar(20), result);
+        }
+
     }
 }
