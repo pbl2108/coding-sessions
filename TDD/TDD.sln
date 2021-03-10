@@ -7,8 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Money", "Money\Money.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Money.Test", "Money.Test\Money.Test.csproj", "{B68FC2FD-BC9B-49DF-81A7-E33912A12021}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Time Tracking", "Time Tracking", "{A94392C3-4EAB-42FA-A84C-C01F761E9E00}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{A94392C3-4EAB-42FA-A84C-C01F761E9E00}"
 	ProjectSection(SolutionItems) = preProject
+		Notes.txt = Notes.txt
 		..\Time Tracking.xlsx = ..\Time Tracking.xlsx
 	EndProjectSection
 EndProject
