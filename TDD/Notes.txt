@@ -1,0 +1,14 @@
+PART I
+-------------------------------------------------------------------------
+TDD cycle
+* Add a little test
+* Run all tests and fail 
+* Make a change
+* Run tests and succeed
+* Refactor to remove duplication
+
+TDD best practices: 
+* The three approaches to makeing a test work cleanly: 
+	Fake it. Triangulation. Obvious Implementation. 
+* Removing duplication between test and code as a way to drive the design 
+* The ability to control the gap between the tests to increase traction when the road gets slippery and cruise faster when conditions are clear
