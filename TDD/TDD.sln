@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{A94392C3-4
 		..\Time Tracking.xlsx = ..\Time Tracking.xlsx
 	EndProjectSection
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "xUnitExample", "xUnitExample\xUnitExample.pyproj", "{C2C1C8A0-3CA9-4C83-B899-E8479A09815F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,8 @@ Global
 		{B68FC2FD-BC9B-49DF-81A7-E33912A12021}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B68FC2FD-BC9B-49DF-81A7-E33912A12021}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B68FC2FD-BC9B-49DF-81A7-E33912A12021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2C1C8A0-3CA9-4C83-B899-E8479A09815F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C1C8A0-3CA9-4C83-B899-E8479A09815F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
