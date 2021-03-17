@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>c2c1c8a0-3ca9-4c83-b899-e8479a09815f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>xUnitExample.py</StartupFile>
+    <StartupFile>TestCaseTest.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="TestCase.py" />
+    <Compile Include="TestCaseTest.py" />
     <Compile Include="WasRun.py" />
     <Compile Include="xUnitExample.py" />
   </ItemGroup>
