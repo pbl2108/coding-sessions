@@ -12,3 +12,10 @@ TDD best practices:
 	Fake it. Triangulation. Obvious Implementation. 
 * Removing duplication between test and code as a way to drive the design 
 * The ability to control the gap between the tests to increase traction when the road gets slippery and cruise faster when conditions are clear
+
+PART II
+-------------------------------------------------------------------------
+3A Pattern
+* Arrange - create some objects
+* Act - stimulate them
+* Assert - check the results
