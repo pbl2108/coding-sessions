@@ -3,15 +3,11 @@ from WasRun import WasRun
 
 class TestCaseTest(TestCase):
     def setUp(self):
-        self.test = WasRun("testMethod")
+        pass
 
-    def testRunning(self):
-        self.test.run()
-        assert self.test.wasRun, "Expected test.wasRun to be true, but found false"
+    def testTemplateMethod(self):
+        test = WasRun("testMethod")
+        test.run(None)
+        assert "setUp testMethod tearDown " == test.log, "Expected test to be set up, but found not to be set up"
 
-    def testSetUp(self):
-        self.test.run()
-        assert self.test.wasSetUp, "Expected test.wasSetUp to be true, but found false"
-
-TestCaseTest("testRunning").run()
-TestCaseTest("testSetUp").run()
+TestCaseTest("testTemplateMethod").run(None)
