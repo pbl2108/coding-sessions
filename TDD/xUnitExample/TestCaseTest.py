@@ -7,7 +7,19 @@ class TestCaseTest(TestCase):
 
     def testTemplateMethod(self):
         test = WasRun("testMethod")
-        test.run(None)
+        test.run()
         assert "setUp testMethod tearDown " == test.log, "Expected test to be set up, but found not to be set up"
 
-TestCaseTest("testTemplateMethod").run(None)
+    def testResult(self):
+        test=WasRun("testMethod")
+        result=test.run()
+        assert "1 run, 0 failed" == result.summary(), "Expected summary to be '1 run, 0 failed', found something else"
+
+    def testFailedResult(self):
+        test=WasRun("testBrokenMethod")
+        result=test.run()
+        assert "1 run, 1 failed" == result.summary(), "Expected summary to be '1 run, 1 failed', found something else"
+
+TestCaseTest("testTemplateMethod").run()
+TestCaseTest("testResult").run()
+TestCaseTest("testFailedResult").run()
