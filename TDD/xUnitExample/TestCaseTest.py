@@ -1,5 +1,6 @@
 from TestCase import TestCase
 from WasRun import WasRun
+from TestResult import TestResult
 
 class TestCaseTest(TestCase):
     def setUp(self):
@@ -20,6 +21,13 @@ class TestCaseTest(TestCase):
         result=test.run()
         assert "1 run, 1 failed" == result.summary(), "Expected summary to be '1 run, 1 failed', found something else"
 
+    def testFailedResultFormatting(self):
+        result = TestResult()
+        result.testStarted()
+        result.testFailed()
+        assert "1 run, 1 failed" == result.summary(), "Expected summary to be '1 run, 1 failed', found something else"
+
 TestCaseTest("testTemplateMethod").run()
 TestCaseTest("testResult").run()
 TestCaseTest("testFailedResult").run()
+TestCaseTest("testFailedResultFormatting").run()

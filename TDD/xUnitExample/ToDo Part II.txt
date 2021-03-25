@@ -5,4 +5,5 @@ Invoke tearDown even if the test method fails
 Run multiple tests
 	DONE:Report collected results
 	DONE:Log string in WasRun
-Report failed tests
+	DONE:Report failed tests
+Catch and report setUp errors
