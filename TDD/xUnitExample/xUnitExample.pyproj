@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="TestSuite.py" />
     <Compile Include="TestResult.py" />
     <Compile Include="TestCase.py" />
     <Compile Include="TestCaseTest.py" />
